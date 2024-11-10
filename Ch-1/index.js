@@ -237,7 +237,7 @@ console.log(arrColors)
 // console.log(stringType, typeof stringType)
 
 
-// Koi bhi number ko string bnaya ja skta h but har number ko string niii bnaya ja skta.
+// Koi bhi number ko string bnaya ja skta h but har string ko number niii bnaya ja skta.
 
 
 //#Boolean method  :-
