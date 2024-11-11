@@ -4,7 +4,6 @@
 //     console.log("run the test",i)
 // }
 
-
 // //usecase of for loop
 // let dishes=["Biryani", "Chana-chat", "Bhallay","soda"]
 
@@ -15,8 +14,6 @@
 //iteration and value of 1
 // 0,1,2,3,and so on
 
-
-
 //# While loop:-
 
 // let j=1
@@ -25,7 +22,6 @@
 //     j++;
 // }
 
-
 // let dishes=["Biryani", "Chana-chat", "Bhallay","soda"]
 
 // let j=0;
@@ -33,7 +29,6 @@
 //     console.log("Fav. dishes -",dishes[j])
 //     j++
 // }
-
 
 //# Do-While:-
 
@@ -44,8 +39,6 @@
 // }while(j<=1) //conditon false already
 
 //-- ek bar toh chalta he h do-while m  //
-
-
 
 //# if , else , else if statements:-
 
@@ -63,8 +56,6 @@
 // //After 1st condition trul controll get out of the scope
 // console.log("Iam outside of conditional block")
 
-
-
 //#nested-if statements:-
 
 // let num=23;
@@ -77,12 +68,9 @@
 //     if(num>20){
 //         console.log("run if all conditions are true")
 //     }
-// } 
- //Run if 1st condition true
+// }
+//Run if 1st condition true
 // run if all conditions are true
-
- 
-
 
 //#Break And Continue Statement:-
 
@@ -98,13 +86,12 @@
 //     console.log("value of i = ",i)
 // }
 
-
 // 2. Break statement
 
 // used to terminate the loop and controll transfer from outside
 
 // for(let i=1;i<=10;i++){
-    
+
 //     if(i==6){
 //         console.log("our desired values is =",i)
 //         break;
@@ -122,10 +109,6 @@
 //  value of i  = 5
 // our desired values is = 6
 
-
-
-
-
 // Logical Operators
 
 //And &&, OR ||, NOT !
@@ -140,8 +123,6 @@
 //     console.log("Change your password")
 // }
 
-
-
 // let password ="qwerty";
 
 // if(password.length > 8 || password.includes('@')){
@@ -149,7 +130,6 @@
 // }else{
 //     console.log("Change your password")
 // }
-
 
 //Not Operator ! true to false and false to true
 
@@ -159,35 +139,29 @@
 // }
 //output :- your status is false.
 
-
-
 //Priorities
 //Not
 // And, OR from left to right
 
 // Example :
 
-let result= true && true || false && !false
+let result = (true && true) || (false && !false);
 // result= true&&true || false && true
 // result= true ||  false&& true
 // result=true && true
-console.log(result)
-
-
+console.log(result);
 
 //# Variables and Block scope
 
 // scope >>- Area where variable is defined or accessible
 
-let score =90; //Global scope
+let score = 90; //Global scope
 
-if(true){
-    score=60; //Block scope 
-    //  score;
-    console.log(score)// Nearest score
+if (true) {
+  score = 60; //Block scope
+  //  score;
+  console.log(score); // Nearest score
 }
-
-
 
 //#ternary operator:-
 
@@ -205,7 +179,6 @@ if(true){
 // let result1= age>18?"qualify":"Fail"
 // console.log(result1)
 
-
 // Ex-2// let age=19;
 // let weight=50;
 
@@ -213,20 +186,18 @@ if(true){
 
 // console.log(result1)
 
-
-
 // # Switch statement:-
 
-let age=18;
+let age = 18;
 
-switch(age){
-    case 15:
-    case 16:
-    case 18: 
-         result="These ages are allowed to sit in the exam";
-         break;
-     default:
-        result= "Not allowed"       
+switch (age) {
+  case 15:
+  case 16:
+  case 18:
+    result = "These ages are allowed to sit in the exam";
+    break;
+  default:
+    result = "Not allowed";
 }
 
-console.log(result)
+console.log(result);
