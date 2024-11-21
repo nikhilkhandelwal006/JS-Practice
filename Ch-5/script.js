@@ -41,8 +41,8 @@
 
 
 
-let querySelectorElement=document.querySelectorAll('p')
-console.log(querySelectorElement)
+// let querySelectorElement=document.querySelectorAll('p')
+// console.log(querySelectorElement)
 
 // querySelectorElement.forEach(element=>{
 //     console.log(element)
@@ -51,8 +51,8 @@ console.log(querySelectorElement)
 
 // Get Elements by tagName
 
-let tagNameElements=document.getElementsByTagName('p')
-console.log(tagNameElements)
+// let tagNameElements=document.getElementsByTagName('p')
+// console.log(tagNameElements)
 
 // tagNameElements.forEach(element=>{
 //     console.log(element)
@@ -60,16 +60,16 @@ console.log(tagNameElements)
 
 
 
-// Get Element By className
+// // Get Element By className
 
-let classNameElements=document.getElementsByClassName('coderdost')
-console.log(classNameElements)
+// let classNameElements=document.getElementsByClassName('coderdost')
+// console.log(classNameElements)
 
 
-// Get elements by ID
+// // Get elements by ID
 
-let elementById=document.getElementById('coders')
-console.log(elementById)
+// let elementById=document.getElementById('coders')
+// console.log(elementById)
 
 
 
@@ -81,10 +81,10 @@ console.log(elementById)
 // a.// let heading=document.querySelector('h1')
 // console.log(heading.innerText) // welcome Coder Dost family
 
-// b.
-let content=document.querySelector('.content')
-// content.innerText += "<p> Great Coders </p>" //update
-console.log(content.innerText) //Hello Coders
+// // b.
+// let content=document.querySelector('.content')
+// // content.innerText += "<p> Great Coders </p>" //update
+// console.log(content.innerText) //Hello Coders
 
 
 
@@ -93,9 +93,9 @@ console.log(content.innerText) //Hello Coders
 //Retrieve and set content in HTML 
 // a.// console.log(heading.innerHTML)//welcome Coder Dost family
  
-//b.
-content.innerHTML += "<p>Great Coders</p>"
-console.log(content.innerHTML) //<p>Hello Coders</p>
+// //b.
+// content.innerHTML += "<p>Great Coders</p>"
+// console.log(content.innerHTML) //<p>Hello Coders</p>
 
 
 
@@ -104,15 +104,15 @@ console.log(content.innerHTML) //<p>Hello Coders</p>
 
 //https://www.youtube.com/watch?v=6l8RWV8D-Yo&t=425s
 
-let coderdostLink=document.querySelector('a')
+// let coderdostLink=document.querySelector('a')
 
-console.log(coderdostLink.getAttribute("href"))
+// console.log(coderdostLink.getAttribute("href"))
 
-// Set the attribute
+// // Set the attribute
 
-coderdostLink.setAttribute('href',"https://www.youtube.com/watch?v=6l8RWV8D-Yo&t=425s")
-console.log(coderdostLink.getAttribute('href'))
-coderdostLink.innerText="Master Class of React.js"
+// coderdostLink.setAttribute('href',"https://www.youtube.com/watch?v=6l8RWV8D-Yo&t=425s")
+// console.log(coderdostLink.getAttribute('href'))
+// coderdostLink.innerText="Master Class of React.js"
 
 
 
@@ -126,13 +126,49 @@ coderdostLink.innerText="Master Class of React.js"
 //# Add, Remove and Replace class of element:-
 
 
-let heading=document.querySelector('h1')
+// let heading=document.querySelector('h1')
 
-//Add the class
-heading.classList.add("newClass")
+// //Add the class
+// heading.classList.add("newClass")
 
-// Remove the class
-heading.classList.remove("newClass")
+// // Remove the class
+// heading.classList.remove("newClass")
 
-//Replace the class
-heading.classList.replace("main","newClass") //will remove the "main" class and keep "newClass"
+// //Replace the class
+// heading.classList.replace("main","newClass") //will remove the "main" class and keep "newClass"
+
+
+
+
+
+// ################PART-2 HTML//////////////
+//  # Parent, Children and Sibling Elements:-
+
+// let parentElement=document.querySelector('.content')
+// //All children of Parent
+// console.log(parentElement.children)
+
+// We can not run forEach Method on HTMLCollection so.
+// First convert it into array
+
+// console.log(Array.from(parentElement.children))
+
+// Array.from(parentElement.children).forEach(function(element){
+//     element.classList.add("coders")
+// })
+
+
+// Child Element-->
+
+// let childElement=document.querySelector('h2')
+// // Find the parent of specific child
+// console.log(childElement.parentElement)
+
+// // Find Next/previous Sibling of child-->
+
+// console.log(childElement.previousElementSibling)
+
+
+
+
+
