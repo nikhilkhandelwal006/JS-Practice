@@ -275,7 +275,7 @@
 // let letters=["a","f","s",'g','d',"k"]
 // console.log(letters.sort())
 
-// let nums=[2,5,7,-1,-22,-43]
+let nums=[2,5,7,-1,-22,-43]
 // console.log("unnsorted",nums)
 
 
@@ -300,10 +300,10 @@
 // descending
 // nums.sort((a,b)=>{
 //     if(a<b){
-//         return -1 //Any Num less than 0
+//         return 1 //Any Num less than 0
 //     }
 //     if(a>b){
-//         return 1 //Any Num greater than 0
+//         return -1 //Any Num greater than 0
 //     }
 // })
 
@@ -324,9 +324,9 @@
 
 
 
-let num=[1,2,3,4,5,6]
+// let num=[1,2,3,4,5,6]
 
-let result=num.slice(0,3).splice(2,1,7).push(8)
-//push method return new length of the array
-console.log(result)//2
+// let result=num.slice(0,3).splice(2,1,7).push(8)
+// //push method return new length of the array
+// console.log(result)//2
 
