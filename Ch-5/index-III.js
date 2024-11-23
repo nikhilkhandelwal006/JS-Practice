@@ -29,7 +29,7 @@
 // const ul=document.querySelector('ul')
 
 // let button=document.querySelector('.clickMe')
-// // console.log(eventElement)
+// // console.log(button)
 
 // button.addEventListener('click',function(){
 //     // console.log("clicked Me")
@@ -81,12 +81,15 @@
 
 
 // Note:- Bubbling neeche se upr ki trf jata rhta h, jb tk usee root element ni miljata h tb tk .
- // mtlb jb apn li pe click krenge toh li k saath saath ul bhi pring=t hoga.
+ // mtlb jb apn li pe click krenge toh li k saath saath ul bhi print hoga.
 
+
+
+
+
+ 
 
 // # Delegation-->
-
-
 
 
 let button=document.querySelector('.clickMe')
