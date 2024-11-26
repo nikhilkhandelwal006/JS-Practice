@@ -474,16 +474,17 @@ let hotel={
 
 // Complete Object
 
-let entries=Object.entries(openingHours)
-console.log(entries)
+// let entries=Object.entries(openingHours)
+// console.log(entries)
 
 // for(let key of entries){
 //     console.log(key)
 // }
 
-for(let [day,{open,close}] of entries){
-    console.log(`On ${day} we open at ${open} and close at ${close}`)
-}
+// for(let [day,{open,close}] of entries){
+//     console.log(`On ${day} we open at ${open} and close at ${close}`)
+// }
+
 
 
 
@@ -517,3 +518,28 @@ for(let [day,{open,close}] of entries){
 // for(let item of itemSet){
 //     console.log(item) 
 // } 
+
+
+
+
+//# Map and Map iteration:-
+
+
+let restaurantMap= new Map();
+
+// Adding Values into the Map
+
+restaurantMap.set('name', "Bombay Hotel")
+restaurantMap.set(1,"Address1")
+restaurantMap.set(2,"Address2").set(true,"We are open").set(false,"WE are close today")
+
+console.log(restaurantMap)
+
+//Getting the value
+console.log(restaurantMap.get(3))// undefined
+console.log(restaurantMap.get(false))// we are close today
+
+console.log(restaurantMap.get(2))// Address2
+
+// size of map
+console.log(restaurantMap.size)//5
