@@ -192,36 +192,328 @@
 
 // # Rest pattern and parameter:-
 
-let hotel={
-    name:"hotell",
-    Location:"street No xyz Delhi",
-    categories:["Chinese","Italian","English"],
-    mainMenu:["FoodA","FoodB","FoodC"],
-    openingHours:{
-        sunday:{open:"09:00AM", close:"11:00PM"},
-        monday:{open:"10:00AM", close:"10:00PM"},
-        tuesday:{open:"06:00AM", close:"10:00PM"}
-    }
-}
+// let hotel={
+//     name:"hotell",
+//     Location:"street No xyz Delhi",
+//     categories:["Chinese","Italian","English"],
+//     mainMenu:["FoodA","FoodB","FoodC"],
+//     openingHours:{
+//         sunday:{open:"09:00AM", close:"11:00PM"},
+//         monday:{open:"10:00AM", close:"10:00PM"},
+//         tuesday:{open:"06:00AM", close:"10:00PM"}
+//     }
+// }
 
 
 // Spread(...) operator it is present in the RHS of-->
 
-let nums=[2,3,4,5,6]
-let newArray=[1, ...nums]
-console.log(newArray)
+// let nums=[2,3,4,5,6]
+// let newArray=[1, ...nums]
+// console.log(newArray)
 
 
 
 // Syntax of REST(...) Get elements and packed them into array -->
 // Use in LHS
 
-let [a,b,...others]=nums;
-console.log(others)
+// let [a,b,...others]=nums;
+// console.log(others)
 
 
 
 // Objects
 
-let {sunday, ...weekdays}=hotel.openingHours;
-console.log(sunday, weekdays)
+// let {sunday, ...weekdays}=hotel.openingHours;
+// console.log(sunday, weekdays)
+
+
+//# Short circuiting (&&, ||):-
+
+
+
+// falsy Values => 0,false,null,undefined,""(empty string)
+
+// AND (&&) operator (output true if all input true)-->
+
+// let result=5000 && "Coders"
+// console.log(result) //Coders // last value comes
+
+// let result=null && "Coders"
+// console.log(result) //null // will not move to next operand
+
+
+// let result=0 && null
+// console.log(result) //0 // will not move to next operand
+
+
+// let result="programmers" && "" &&"5"
+// console.log(result)  
+
+
+
+// let result="programmers" && 0 &&"5"
+// console.log(result)   //0
+
+
+
+
+// OR (||) operator (Output true if any given input true)
+
+// let result="Programmer" || "coders"
+// console.log(result)
+
+// As || operator find first output true.Its simply return that true value and does not move towards next operands.
+
+
+// let result="" || "coders"
+// console.log(result) //coders
+
+
+// let result="" || null
+// console.log(result) 
+
+
+
+
+//# Nullish coalescing Operator:-
+ 
+// For nullish coalescing operator(??) only "null" and "undefined" are falsy value.
+
+// let numGuests=null;
+// let result=numGuests||10
+// console.log(result) //10
+
+
+// let result2=numGuests??10
+// console.log(result) //10
+
+
+
+// let numGuests=0;
+// let result=numGuests||10
+// console.log(result) //10
+
+
+// let result2=numGuests??10
+// console.log(result) //0 //0 is not nullish value
+
+
+
+ 
+//# for-of Loop:-
+
+// let hotel={
+//     name:"hotell",
+//     Location:"street No xyz Delhi",
+//     categories:["Chinese","Italian","English"],
+//     mainMenu:["FoodA","FoodB","FoodC"],
+//     starterMenu:["SpecialFoodA","SpecialFoodB"],
+//     openingHours:{
+//         sunday:{open:"09:00AM", close:"11:00PM"},
+//         monday:{open:"10:00AM", close:"10:00PM"},
+//         tuesday:{open:"06:00AM", close:"10:00PM"}
+//     }
+// }
+
+
+
+// let menu=[...hotel.mainMenu, ...hotel.starterMenu]
+// console.log(menu)
+
+//  for(let elem of menu) console.log(elem)
+//  FoodA
+//  FoodB
+//  FoodC
+// SpecialFoodA
+//  SpecialFoodB
+
+
+
+// if we want both index as well as value
+//  for(let [i,item] of menu.entries()){
+//     console.log(`${i+1}: ${item}`)
+//  }   
+
+
+
+
+//# Enhanced Object literal:-
+// Before ES6 Vs After ES6
+
+// we can use computed property name
+
+//  let openingHours={
+//     sunday:{open:"09:00AM", close:"11:00PM"},
+//     monday:{open:"10:00AM", close:"10:00PM"},
+//     tuesday:{open:"06:00AM", close:"10:00PM"}
+// }
+
+// let menuType="platinumMenu"
+
+// let hotel={
+//     name:"hotell",
+//     Location:"street No xyz Delhi",
+//     categories:["Chinese","Italian","English"],
+//     mainMenu:["FoodA","FoodB","FoodC"],
+//     starterMenu:["SpecialFoodA","SpecialFoodB"],
+//     openingHours,
+//     // order:function(){
+
+//     // }
+//     order(){
+        
+//     },
+//     // menuType:["Different food items..."],
+//     [menuType]:["Different food items..."]
+  
+    
+// }
+
+// console.log(hotel)
+
+
+
+
+
+
+// # optional Chaining(?.):-
+
+
+//  let openingHours={
+//     sunday:{open:"09:00AM", close:"11:00PM"},
+//     monday:{open:"10:00AM", close:"10:00PM"},
+//     tuesday:{open:"06:00AM", close:"10:00PM"}
+// }
+
+// let menuType="platinumMenu"
+
+// let hotel={
+//     name:"hotell",
+//     Location:"street No xyz Delhi",
+//     categories:["Chinese","Italian","English"],
+//     mainMenu:["FoodA","FoodB","FoodC"],
+//     starterMenu:["SpecialFoodA","SpecialFoodB"],
+//     openingHours
+
+// }
+
+// Let suppose we Want to check this hotel open on saturday or not
+// if open then at what time.
+
+// console.log(hotel.openingHours.saturday) //undefined
+
+// console.log(hotel.openingHours.saturday.open) //error
+
+
+
+// to avoid this error there are 2 methods:
+
+// without optional chaining
+
+// if(hotel.openingHours && hotel.openingHours.sunday){
+//     console.log(hotel.openingHours.sunday.open)
+// } //09:00AM
+
+
+// with optional Chaining
+
+// console.log(hotel.openingHours?.saturday?.open) // undefined
+
+
+
+// console.log(hotel.openingHours?.sunday?.open) // undefined
+
+//check previous value of the operator(?.) and returns you => null or undefined. (This operator will not give you error )
+
+
+
+
+
+
+//# Looping Objects (Object_Keys,values,entries):-
+
+
+
+let openingHours={
+    sunday:{open:"09:00AM", close:"11:00PM"},
+    monday:{open:"10:00AM", close:"10:00PM"},
+    tuesday:{open:"06:00AM", close:"10:00PM"}
+}
+
+
+let hotel={
+    name:"hotell",
+    Location:"street No xyz Delhi",
+    categories:["Chinese","Italian","English"],
+    mainMenu:["FoodA","FoodB","FoodC"],
+    starterMenu:["SpecialFoodA","SpecialFoodB"],
+    openingHours
+
+}
+
+
+//Keys(Properties)
+
+// let properties=Object.keys(hotel)
+// console.log(properties)
+
+// for (let key of properties){
+//     console.log(key)
+// }
+
+
+// Values
+
+// let values=Object.values(hotel)
+// console.log(values)
+
+// for (let key of values){
+//     console.log(key)
+// }
+
+
+// Complete Object
+
+let entries=Object.entries(openingHours)
+console.log(entries)
+
+// for(let key of entries){
+//     console.log(key)
+// }
+
+for(let [day,{open,close}] of entries){
+    console.log(`On ${day} we open at ${open} and close at ${close}`)
+}
+
+
+
+
+
+
+
+
+// # Sets:-
+
+// let itemSet=new Set([1,2,3,1,4,5,6,5])
+// console.log(itemSet) //[1,2,3,4,5,6]
+// console.log(itemSet.size) //6
+// console.log(itemSet.has(2))//true
+// console.log(itemSet.has(8))//false
+// console.log(itemSet.add(9))
+// console.log(itemSet.delete(2))
+// console.log(itemSet)
+// console.log(itemSet[0]) //undefined // not allowed
+
+// Set are also iterables-
+// for(let item of itemSet){
+//     console.log(item)
+// }
+
+
+
+
+// let itemSet=new Set("programmers")
+// console.log(itemSet)
+// for(let item of itemSet){
+//     console.log(item) 
+// } 
