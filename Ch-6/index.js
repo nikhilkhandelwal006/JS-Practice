@@ -112,23 +112,6 @@ let user=document.querySelector("#name")
 let password=document.querySelector("#password")
 let userNamePattern=/^[A-Za-z]{6,12}$/
 
-form.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    let username=user.value
-    console.log(username)
-    //"test" method return boolean values
-     let result=userNamePattern.test(username)
-     console.log(result)
-     if(result==true){
-        console.log("Username is Valid")
-
-     }else{
-        console.log("username is Invalid try again")
-     }
-})
- 
-
-
 
 
 // Live Feedback
