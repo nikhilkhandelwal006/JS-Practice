@@ -55,21 +55,72 @@
 
 
 
-const employee={
-    calcTax(){
-        console.log("Tax rate is 10%")
+// const employee={
+//     calcTax(){
+//         console.log("Tax rate is 10%")
+//     }
+// }
+
+
+// const karanArjun={
+//     salary:5000,
+//     calcTax(){
+//         console.log("Tax rate is 20%")
+//     }
+// }
+// karanArjun.__proto__=employee
+
+// console.log(karanArjun)
+// console.log(karanArjun.calcTax())
+
+
+
+
+// # Classes in JS:
+
+
+// Class is a program-code template for creating objects.
+
+// Those Objects will have some state(variables) & some behaviour(functions) inside it.
+
+
+
+// class MyClass {
+//     constructor() {   }
+
+//     myMethod(){  }
+
+// }
+
+
+// let myObj=new MyClass()
+
+
+
+
+class ToyotaCar{
+    start(){
+        console.log("start Engine")
+    }
+
+    stop(){
+        console.log("stop Engine")
+    }
+
+    setBrand(brand){
+        this.brand=brand
     }
 }
 
+// let fortuner=new ToyotaCar()
+// console.log(fortuner)
+// console.log(fortuner.start())
+// fortuner.setBrand("fortuner")
 
-const karanArjun={
-    salary:5000,
-    calcTax(){
-        console.log("Tax rate is 20%")
-    }
-}
-karanArjun.__proto__=employee
 
-console.log(karanArjun)
-console.log(karanArjun.calcTax())
 
+// let lexus=new ToyotaCar()
+// console.log(lexus)
+// lexus.start()
+// lexus.stop()
+// lexus.setBrand("lexus")
