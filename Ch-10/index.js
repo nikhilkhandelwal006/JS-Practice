@@ -98,19 +98,19 @@
 
 
 
-class ToyotaCar{
-    start(){
-        console.log("start Engine")
-    }
+// class ToyotaCar{
+//     start(){
+//         console.log("start Engine")
+//     }
 
-    stop(){
-        console.log("stop Engine")
-    }
+//     stop(){
+//         console.log("stop Engine")
+//     }
 
-    setBrand(brand){
-        this.brand=brand
-    }
-}
+//     setBrand(brand){
+//         this.brand=brand
+//     }
+// }
 
 // let fortuner=new ToyotaCar()
 // console.log(fortuner)
@@ -124,3 +124,38 @@ class ToyotaCar{
 // lexus.start()
 // lexus.stop()
 // lexus.setBrand("lexus")
+
+
+
+
+
+// # Constructor in JS:
+
+// constructor() method is :
+    //    i.) automatically invoked by new
+    //    ii.) initializes object
+ 
+
+// class ToyotaCar{
+//     constructor(brand,mileage){
+//         console.log("creating new object")
+//         this.brand=brand
+//         this.mileage=mileage
+//     }
+//     start(){
+//         console.log("start")
+//     }
+//     stop(){
+//         console.log("stop")
+//     }
+// }
+
+// let fortuner=new ToyotaCar("fortuner",18) //constructor
+// console.log(fortuner)
+// let lexus=new ToyotaCar("lexus",12) // constructor
+// console.log(lexus)
+
+
+
+
+
