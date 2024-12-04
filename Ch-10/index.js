@@ -298,36 +298,77 @@
 // Q.2 Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data.?
 
 
-let DATA="secret information";
+// let DATA="secret information";
 
-class User{
-    constructor(name,email){
-      this.email=email;
-      this.name=name;
-    }
+// class User{
+//     constructor(name,email){
+//       this.email=email;
+//       this.name=name;
+//     }
 
-    viewData(){
-        console.log("data = ",DATA)
-    }
+//     viewData(){
+//         console.log("data = ",DATA)
+//     }
+// }
+
+
+// class Admin extends User{
+
+//      constructor(name,email){
+//  super(name,email)
+//      }
+
+//     editData(){
+//         DATA="some new Added"
+//     }
+// }
+
+// let student1= new User("nikhil","abc@gmiaol.com")
+// let student2= new User("khandelwal","asd@gmail.com")
+
+
+// let teacher1= new User("swati","swatimadam@gmail.com")
+
+
+// let admin1= new Admin("admin","admin@gg.com")
+
+
+
+
+
+
+
+// # Error-Handling:
+
+
+//try-catch
+
+// try{
+//     // normal code
+// }catch(err){  // err is error object
+//     // handling error
+// }
+
+
+
+
+let a=5;
+let b=10;
+
+console.log("a=",a)
+console.log("b=",b)
+console.log("a+b", a+b)
+console.log("a+b",a+b)
+
+try {
+    console.log("a+b",a+c); //error
+} catch (error) {
+    console.log(error)
 }
 
-
-class Admin extends User{
-
-     constructor(name,email){
- super(name,email)
-     }
-
-    editData(){
-        DATA="some new Added"
-    }
-}
-
-let student1= new User("nikhil","abc@gmiaol.com")
-let student2= new User("khandelwal","asd@gmail.com")
-
-
-let teacher1= new User("swati","swatimadam@gmail.com")
-
-
-let admin1= new Admin("admin","admin@gg.com")
+console.log("a+b",a+b)
+console.log("a+b",a+b)
+console.log("a+b",a+b)
+console.log("a+b",a+b)
+console.log("a+b",a+b)
+console.log("a+b",a+b)
