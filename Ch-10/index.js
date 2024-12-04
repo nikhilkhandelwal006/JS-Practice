@@ -159,3 +159,58 @@
 
 
 
+
+
+// # Inheritance in JS:
+
+// INheritance is passing down properties & methods from parent class to child class 
+
+// class Parent {
+
+// }
+
+// class Child extends Parent{
+
+// }
+
+//Imp.Note-- If Child & Parent have same method, child's method will be used.[Method Overriding]
+
+
+
+class Person {
+    constructor(){
+        this.species= "homo sapiens";
+    }
+
+    eat(){
+        console.log("eat");
+
+    }
+
+    sleep(){
+        console.log("sleep");
+    }
+
+    work(){
+        console.log("do nothing");
+    }
+}
+
+
+class Engineer extends Person{
+    work(){
+        console.log("solve problems, build something")
+    }
+}
+
+class Doctor extends Person{
+   work(){
+    console.log("treat patients")
+   }
+
+}
+
+let shradhaObj=new Engineer()
+
+let nikhilObj=new Doctor()
+
