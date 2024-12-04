@@ -223,39 +223,68 @@
 
 // # Super in JS:
 
+
 // The Super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
 
 
 // super(args) //calls parent's constructor
 // super.parentMethod(args)
 
-class Person{
-    constructor(name){
-        this.species="homo sapiens";
-        this.name=name;
+// class Person{
+//     constructor(name){
+//         this.species="homo sapiens";
+//         this.name=name;
+//     }
+
+//     eat(){
+//         console.log("eat")
+//     }
+// }
+
+
+// class Engineer extends Person{
+//     constructor(name){
+//         super(name); // to invoke parent class constructor
+//     }
+//     work(){
+//         super.eat()
+//         console.log("solve problems, build something")
+//     }
+// }
+
+
+// let engObj=new Engineer("nikhil");
+
+
+
+
+
+
+
+
+
+// Some Questions:
+
+// Q.1 You are creating a website for your college. Create a class User with 2 properties, name & email. It also has a method called viewData() that allows user to view website data.?
+
+
+// Ans. 
+
+const DATA="sample website data"
+
+class User{
+    constructor(name,email){
+   this.name=name
+   this.email=email
     }
 
-    eat(){
-        console.log("eat")
+    viewData(){
+     console.log("data",DATA)
     }
 }
 
-
-class Engineer extends Person{
-    constructor(name){
-        super(name); // to invoke parent class constructor
-    }
-    work(){
-        super.eat()
-        console.log("solve problems, build something")
-    }
-}
+let student1 = new User("nikhil", "abc@gmail.com")
+let student2=  new User("khandelwal","qwer@gmail.com")
 
 
-let engObj=new Engineer("nikhil");
-
-
-
-
-
-
+let teacher1= new User("swati","swa@gmail.com")
