@@ -163,7 +163,7 @@
 
 // # Inheritance in JS:
 
-// INheritance is passing down properties & methods from parent class to child class 
+// Inheritance is passing down properties & methods from parent class to child class 
 
 // class Parent {
 
@@ -177,40 +177,85 @@
 
 
 
-class Person {
-    constructor(){
-        this.species= "homo sapiens";
+// class Person {
+//     constructor(){
+//         this.species= "homo sapiens";
+//     }
+
+//     eat(){
+//         console.log("eat");
+
+//     }
+
+//     sleep(){
+//         console.log("sleep");
+//     }
+
+//     work(){
+//         console.log("do nothing");
+//     }
+// }
+
+
+// class Engineer extends Person{
+//     work(){
+//         console.log("solve problems, build something")
+//     }
+// }
+
+// class Doctor extends Person{
+//    work(){
+//     console.log("treat patients")
+//    }
+
+// }
+
+// let shradhaObj=new Engineer()
+
+// let nikhilObj=new Doctor()
+
+
+
+
+
+
+
+
+// # Super in JS:
+
+// The Super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+
+
+// super(args) //calls parent's constructor
+// super.parentMethod(args)
+
+class Person{
+    constructor(name){
+        this.species="homo sapiens";
+        this.name=name;
     }
 
     eat(){
-        console.log("eat");
-
-    }
-
-    sleep(){
-        console.log("sleep");
-    }
-
-    work(){
-        console.log("do nothing");
+        console.log("eat")
     }
 }
 
 
 class Engineer extends Person{
+    constructor(name){
+        super(name); // to invoke parent class constructor
+    }
     work(){
+        super.eat()
         console.log("solve problems, build something")
     }
 }
 
-class Doctor extends Person{
-   work(){
-    console.log("treat patients")
-   }
 
-}
+let engObj=new Engineer("nikhil");
 
-let shradhaObj=new Engineer()
 
-let nikhilObj=new Doctor()
+
+
+
 
