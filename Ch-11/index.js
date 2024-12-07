@@ -144,7 +144,7 @@
 
 
 //ex-2
-// function getData(dataid, getNextData){
+// function getData(dataid){
 //     return new Promise((resolve,reject)=>{
 //         setTimeout(()=>{
 //             console.log("data",dataid) 
