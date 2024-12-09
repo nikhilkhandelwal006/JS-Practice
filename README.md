@@ -1,4 +1,3 @@
-
 ---
 
 # JS-Practice  
@@ -28,8 +27,7 @@ This repository is a comprehensive collection of JavaScript concepts and practic
 ### **4. Objects**  
 - Object creation and manipulation  
 - Object properties and methods  
-- The `this` keyword  
-
+- The `this` keyword   
 
 ### **5. DOM (Document Object Model)**  
 - Selecting and manipulating DOM elements  
@@ -42,7 +40,7 @@ This repository is a comprehensive collection of JavaScript concepts and practic
 - Working with input fields  
 
 ### **7. Array methods**  
-- Common methods: `map`, `filter`, `reduce`, `forEach` etc 
+- Common methods: `map`, `filter`, `reduce`, `forEach`, etc.  
 - Sorting and searching  
 - Array transformations  
 
@@ -75,22 +73,31 @@ This repository is a comprehensive collection of JavaScript concepts and practic
 
 ### **13. Modern Tooling, etc.**  
 - NPM (Node Package Manager) basics  
-- Modern Pattern
+- Modern Pattern  
 
 ### **14. Closures**  
 - Understanding closures  
 - Practical examples  
 - Use cases in real-world scenarios  
 
+### **15. API Calls**  
+- Using the `fetch` API  
+- Handling API responses with Promises  
+- Using `async-await` for cleaner asynchronous API calls  
+
 ## How to Use  
+
 Clone this repository to explore the chapters:  
+
 ```bash  
 git clone https://github.com/nikhilkhandelwal006/JS-Practice.git  
 cd JS-Practice  
 ```  
+
 Open each chapter's directory to explore the content and code examples.  
 
 ## Contributions  
+
 Feel free to fork this repository and contribute by adding more examples, fixing bugs, or suggesting improvements!  
 
----
+---  
